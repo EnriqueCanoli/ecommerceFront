@@ -38,12 +38,6 @@ const Orders = () => {
                                     <p>{new Date(orden.date).toLocaleDateString()}</p>
                                     <p className="font-bold">Status: </p>
                                     <p>{orden.status}</p> 
-                                    <p className="font-bold">Products: </p>
-                                    {orden.products.map((product) => (
-                                    <div key={product.id} className="flex flex-row justify-between">
-                                        <p>{product.name}</p>
-                                    </div>
-                                ))}
                                 </div>
                                 
 

@@ -12,7 +12,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Login = (req: NextApiRequest, res: NextApiResponse) => {
+const Login = () => {
     const router = useRouter();
     const [dataUser, setDataUser] = useState({
         email: "",

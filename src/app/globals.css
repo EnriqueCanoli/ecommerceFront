@@ -1,0 +1,29 @@
+/* global.css */
+
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define the colors for the gradient */
+:root {
+  --technology-gradient: linear-gradient(135deg, #4A90E2, #009688, #FF5722);
+}
+
+/* Apply gradient background to body */
+body {
+  background: white  /* Use the gradient var(--technology-gradient); */
+}
+
+/* Apply blur effect to body */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: blur(10px); /* Add blur effect */
+  z-index: -1; /* Ensure the pseudo-element is behind other content */
+}
